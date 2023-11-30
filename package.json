@@ -27,7 +27,7 @@
     "strapi-plugin-fuzzy-search": "^2.2.0",
     "strapi-plugin-multi-select": "^1.2.2",
     "strapi-provider-upload-azure-storage": "^3.3.0",
-    "styled-components": "5.3.3"
+    "styled-components": "5.3.11"
   },
   "engines": {
     "node": ">=18.0.0 <=20.x.x",
