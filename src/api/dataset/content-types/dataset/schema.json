@@ -25,11 +25,26 @@
       "required": true
     },
     "file": {
-      "allowedTypes": [
-        "files"
-      ],
       "type": "media",
       "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "files"
+      ]
+    },
+    "extension": {
+      "type": "enumeration",
+      "enum": [
+        "csv",
+        "xlsx",
+        "xls",
+        "pdf",
+        "txt",
+        "zip",
+        "doc",
+        "docs",
+        "geojson"
+      ],
       "required": true
     }
   }

@@ -784,6 +784,10 @@ export interface ApiDatasetDataset extends Schema.CollectionType {
     url: Attribute.String & Attribute.Required;
     organization: Attribute.String & Attribute.Required;
     file: Attribute.Media & Attribute.Required;
+    extension: Attribute.Enumeration<
+      ['csv', 'xlsx', 'xls', 'pdf', 'txt', 'zip', 'doc', 'docs', 'geojson']
+    > &
+      Attribute.Required;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
@@ -828,7 +832,7 @@ export interface ApiProjectProject extends Schema.CollectionType {
       'api::tag.tag'
     >;
     recipes: Attribute.Component<'project.recipe', true>;
-    formattedFile: Attribute.Media;
+    formattedFiles: Attribute.Media;
     createdAt: Attribute.DateTime;
     updatedAt: Attribute.DateTime;
     publishedAt: Attribute.DateTime;
